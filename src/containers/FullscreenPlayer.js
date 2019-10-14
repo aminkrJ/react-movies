@@ -19,10 +19,9 @@ class FullscreenPlayer extends React.Component {
 
   render() {
     const playing = !_.isEmpty(this.props.playingMovie)
-    const display = playing ? 'block' : 'none'
     return (
       <Fullscreen enabled={playing} onChange={this.handleFullScreenChange.bind(this)}>
-        {playing && <VideoPlayer style={{display, ...fullscreen}} video={this.props.playingMovie.contents[0]} />}
+        {playing && <VideoPlayer style={fullscreen} video={this.props.playingMovie.contents[0]} />}
       </Fullscreen>
     )
   }
