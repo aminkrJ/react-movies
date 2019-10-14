@@ -33,7 +33,7 @@ class MovieCarousel extends React.Component {
   renderMovies() {
     return _.map(this.props.movies, (movie, index) => {
       return(
-        <Movie key={movie.id} movie={movie} onClick={this.handleMovieClick} selected={this.state.activeIndex === index} playing={this.props.playingMovie.id === movie.id} />
+        <Movie key={movie.id} movie={movie} onClick={this.handleMovieClick} selected={this.state.activeIndex === index} />
       )
     })
   }
