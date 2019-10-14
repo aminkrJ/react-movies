@@ -1,6 +1,5 @@
 import React from 'react';
 import MovieCover from './MovieCover'
-import {withStore} from '../../store'
 
 class Movie extends React.Component {
   constructor(props) {
@@ -18,4 +17,4 @@ Movie.defaultProps = {
   selected: false
 }
 
-export default withStore(Movie)
+export default Movie

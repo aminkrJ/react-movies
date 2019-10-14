@@ -1,7 +1,7 @@
 import React from 'react'
 import Fullscreen from "react-full-screen";
-import VideoPlayer from '../utils/VideoPlayer'
-import {withStore} from '../../store'
+import VideoPlayer from '../components/utils/VideoPlayer'
+import {withStore} from '../store'
 import _ from 'underscore'
 
 const fullscreen = {
